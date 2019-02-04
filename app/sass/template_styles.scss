@@ -1,0 +1,44 @@
+// Стили плагинов
+@import "plugins/slick";
+@import "plugins/slick-theme";
+@import "plugins/iziModal";
+@import "plugins/datepicker";
+@import "plugins/inputmask";
+// Переменные, сбросы стилей, типографика, шрифты
+@import "core/vars";
+@import "core/mixins";
+@import "core/reset";
+@import "core/typo";
+@import "core/fonts";
+@import "core/base";
+// Стили блоков
+@import "core/header";
+@import "core/footer";
+@import "core/form";
+@import "blocks/representation";
+@import "blocks/services";
+@import "blocks/doctors";
+@import "blocks/svc_level";
+@import "blocks/appointment";
+@import "blocks/stocks";
+@import "blocks/reviews";
+@import "blocks/contacts";
+@import "blocks/inner-page";
+@import "blocks/important";
+@import "blocks/feedback-bl";
+@import "blocks/feedback-form";
+@import "blocks/modals";
+@import "blocks/price";
+@import "blocks/second-menu";
+@import "blocks/signup-doc";
+@import "blocks/signup-date";
+@import "blocks/signup-cont";
+@import "blocks/signup-prefooter";
+@import "blocks/articles";
+@import "blocks/pagination";
+// Стили страниц
+@import "pages/index";
+@import "pages/page404";
+@import "pages/services";
+@import "pages/signup";
+@import "pages/detail-page";

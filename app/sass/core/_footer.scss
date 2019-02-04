@@ -1,0 +1,118 @@
+.b-footer {
+  padding:     0 10px 50px;
+  background:  $clr_light_blue;
+  height:      360px;
+  flex:        0 0 auto;
+  display:     flex;
+  align-items: flex-end;
+  box-sizing:  border-box;
+  }
+
+.b-footer-wrapper {
+  max-width:       940px;
+  margin:          0 auto;
+  width:           100%;
+  display:         flex;
+  justify-content: space-between;
+  p {
+    font-size:   13px;
+    line-height: 18px;
+    color:       $gray_31;
+    }
+  }
+
+.b-footer-info {
+  display:         flex;
+  justify-content: left;
+  &__logo {margin-right: 19px;}
+  img {
+    width:  31px;
+    height: 38px;
+    }
+  &__desc {
+    a {margin-right: 1ch;}
+    }
+  }
+
+.b-footer-dev {
+  align-items: flex-end;
+  text-align:  end;
+  display:     none;
+  p { white-space: nowrap}
+  }
+
+@media (min-width: $scr_tab) {
+  .b-footer {
+    padding-bottom: 80px;
+    }
+  .b-footer-dev {
+    display: block;
+    }
+  }
+
+.b-footer-blue{
+  //background-color: $clr_blue;
+  background-image: url('images/footer-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: $white;
+  padding: 190px 0 60px;
+  @media (min-width: $scr_laptop) {
+    background-size: 100% 100%;
+  }
+  &__inner{
+    @media (min-width: $scr_tab) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__tel{
+    a{
+      font-size: 35px;
+      line-height: 47px;
+      font-weight: bold;
+      margin-bottom: 13px;
+      color: $white;
+    }
+  }
+  &__addr{
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  &__l{
+    display: none;
+    @media (min-width: $scr_tab) {
+      display: block;
+    }
+  }
+  &__r{
+    text-align: center;
+    @media (min-width: $scr_tab) {
+      text-align: right;
+    }
+  }
+  &__ss-list{
+    display: flex;
+    justify-content: center;
+    @media (min-width: $scr_tab) {
+      justify-content: flex-end;
+    }
+  }
+}
+.blue{
+  .b-footer-blue{
+    background-color: $clr_blue;
+  }
+}
+
+.footer-menu{
+  &__ltem{}
+  &__link{
+    color: $white;
+    font-size: 20px;
+    line-height: 29px;
+
+  }
+}

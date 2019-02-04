@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'ALSSchlangesans';
+  src:         url('fonts/ALSSchlangesans/ALSSchlangesans.woff2') format('woff2'),
+  url('fonts/ALSSchlangesans/ALSSchlangesans.woff') format('woff');
+  font-weight: normal;
+  font-style:  normal;
+}
+@font-face {
+  font-family: 'ALSSchlangesans';
+  src:         url('fonts/ALSSchlangesans/ALSSchlangesans-Bold.woff2') format('woff2'),
+  url('fonts/ALSSchlangesans/ALSSchlangesans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style:  normal;
+}
+
+/*
+@font-face {
+  font-family: 'ALSSchlangesans';
+  src:         url('fonts/ALSSchlangesans/ALSSchlangesans-Light.woff2') format('woff2'),
+               url('fonts/ALSSchlangesans/ALSSchlangesans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style:  normal;
+  }
+
+@font-face {
+  font-family: 'ALSSchlangesans';
+  src:         url('fonts/ALSSchlangesans/ALSSchlangesans-Black.woff2') format('woff2'),
+               url('fonts/ALSSchlangesans/ALSSchlangesans-Black.woff') format('woff');
+  font-weight: 900;
+  font-style:  normal;
+  }
+
+
+
+@font-face {
+  font-family: 'ALSSchlangesans';
+  src:         url('fonts/ALSSchlangesans/ALSSchlangesans-Thin.woff2') format('woff2'),
+               url('fonts/ALSSchlangesans/ALSSchlangesans-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style:  normal;
+  }
+
+
+*/
+@font-face {
+  font-family: 'ico';
+  src:         url("fonts/icons/icons.woff2") format('woff2'),
+               url("fonts/icons/icons.woff") format('woff'),
+               url("fonts/icons/icons.ttf") format('truetype');
+  font-weight: normal;
+  font-style:  normal;
+}

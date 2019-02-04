@@ -1,0 +1,48 @@
+.content {
+  box-sizing: border-box;
+}
+
+.sec-content {
+  padding: 0 10px;
+  max-width: 940px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: $white;
+  &.iziModal-isAttached {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  &.blue {
+    background-color: $clr_blue;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+section {
+  max-width: 940px;
+}
+
+img:focus {
+  outline: none;
+}
+
+.slick-slide:focus {
+  outline: none;
+}

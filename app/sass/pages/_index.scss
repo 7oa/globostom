@@ -1,0 +1,96 @@
+.blue-button {
+  display          : block;
+  cursor           : pointer;
+  color            : white;
+  text-align       : center;
+  line-height      : 50px;
+  background-color : $clr_blue;
+  width            : 270px;
+  height           : 50px;
+  border-radius    : 100px;
+  box-shadow       : 0 1px 20px rgba($clr_shadow, .15);
+  font-size: 21px;
+  font-family: 'ALSSchlangesans';
+  }
+.tel {
+  display     : block;
+  font-weight : bold;
+  font-size   : 24px;
+  color       : #313131;
+  }
+.link {display : inline-block;}
+.link:after {
+  content     : '→';
+  display     : inline-block;
+  width       : 16px;
+  height      : 9px;
+  margin-left : 1ch;
+  }
+.shown {
+  display : flex;
+  }
+.section1 {
+  position : relative;
+  overflow : hidden;
+  //background-size: 100%;
+  &:before {
+    content                    : '';
+    display                    : block;
+    position                   : absolute;
+    top                        : 0;
+    bottom                     : 0;
+    right                      : -20px;
+    left                       : -20px;
+    height                     : 100%;
+    border-bottom-left-radius  : 100% 300px;
+    border-bottom-right-radius : 100% 300px;
+    background-image           : url("images/bgr-top.png");
+    background-color           : $clr_light_blue;
+    background-position        : top center;
+    background-size            : cover;
+    }
+  &__content {
+    position       : relative;
+    padding-bottom : 180px;
+    }
+  }
+.section2 {
+  margin-top : -180px;
+  background : linear-gradient(180deg, $white, $clr_light_blue);
+  &__content {
+    position : relative;
+    z-index  : 3;
+    }
+  }
+.section3 {
+  position   : relative;
+  overflow   : hidden;
+  margin-top : -350px;
+  &:before {
+    content                    : '';
+    display                    : block;
+    position                   : absolute;
+    top                        : 0;
+    bottom                     : 0;
+    right                      : -20px;
+    left                       : -20px;
+    height                     : 100%;
+    background                 : linear-gradient(180deg, $white, $clr_light_blue);
+    border-bottom-left-radius  : 100% 300px;
+    border-bottom-right-radius : 100% 300px;
+    }
+  &__content {
+    padding-top    : 400px;
+    padding-bottom : 150px;
+    position       : relative;
+    z-index        : 2;
+    }
+  }
+.section4 {
+  background-color : #4E79C7;
+  margin-top       : -130px;
+  &__content {
+    position : relative;
+    z-index  : 2;
+    }
+  }

@@ -1,0 +1,28 @@
+extends core/_template
+
+block title
+    title='Глобо-Стом'
+
+block content
+    .section1
+        ._content
+            .sec-content
+                include core/_header
+                include blocks/_representation
+    .section2
+        ._content
+            .sec-content
+                include blocks/_services
+                include blocks/_doctors
+                include blocks/_svc-level
+    .section3
+        ._content
+            .sec-content
+                include blocks/_appointment
+    .section4
+        ._content
+            .sec-content
+                include blocks/_stocks
+                include blocks/_reviews
+                include blocks/_contacts
+
