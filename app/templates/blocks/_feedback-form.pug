@@ -1,0 +1,31 @@
+form.feedback-form
+    ._row
+        ._col.-col2
+            ._label Ваше имя
+            ._input
+                input.input(type="text")
+        ._col.-col2
+            ._label.required Электронная почта
+            ._input
+                input.input.error(type="text")
+    ._row
+        ._col
+            ._label Что вы думаете о нас?
+            ._textarea
+                textarea.textarea(style="height:100px")
+    ._row
+        ._col
+            ._checkbox
+                input.checkbox(type="checkbox" id="confirm")
+                label.checkbox-label(for="confirm")
+                    span Я согласен на обработку <a href="#">персональных данных</a>
+    ._row.-footer
+        ._col.-col2
+            .file-upload(title="Прикрепить фото")
+                ._btn
+                    label
+                        input(type="file")
+                ._filename
+                ._remove
+        ._col.-col2
+            input.submit(type="submit" value="Отправить отзыв")

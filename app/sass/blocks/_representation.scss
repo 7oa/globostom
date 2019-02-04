@@ -1,0 +1,30 @@
+.b-repres {
+  margin-bottom: 95px;
+  &__prev{
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: $clr_light_gray;
+    @media (min-width: $scr_tab) {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 41px;
+    }
+  }
+}
+
+.b-repres-wrapper {
+  max-width: 530px;
+  h1 {margin-bottom: 25px;}
+
+}
+
+.blue-button {margin: 0 auto}
+
+@media (min-width: $scr_mobile) {
+  .b-repres {
+    .blue-button {
+      margin: 0;
+      }
+    }
+  }

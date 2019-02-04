@@ -1,0 +1,152 @@
+.input,
+.textarea{
+  font-family: 'ALSSchlangesans';
+  color: $clr_subtitle;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid $clr_gray-d9;
+  border-radius: 5px;
+  &.error{
+    border-color: $red;
+  }
+}
+.input{
+  padding: 11px 10px;
+}
+.textarea{
+  padding: 10px;
+  resize: none;
+}
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 0;
+}
+.checkbox-label{
+  font-size: 14px;
+  line-height: 14px;
+  min-height: 23px;
+  display: flex;
+  align-items: center;
+  @media (min-width: $scr_mobile) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  a{
+    color: $clr_blue-af;
+  }
+}
+.checkbox + label {
+  position: relative;
+  //padding: 0 0 0 30px;
+  cursor: pointer;
+}
+.checkbox + label:before {
+  content: '';
+  /*position: absolute;
+  top: 3px;
+  left: 0;*/
+  flex: 0 0 auto;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background: $white;
+  border: 1px solid $clr_blue-42;
+  transition: background-color .2s;
+}
+.checkbox:checked + label:before {
+  background-color: $clr_blue-42;
+  background-image: url('images/check.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.submit{
+  background-color: $clr_blue;
+  font-family: 'ALSSchlangesans';
+  color: $white;
+  font-size: 21px;
+  line-height: 50px;
+  border-radius: 25px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.file-upload{
+  display: flex;
+  align-items: center;
+  span{
+    line-height: 36px;
+  }
+  &__btn{
+    position: relative;
+    overflow: hidden;
+    width: 52px;
+    height: 52px;
+    background: $clr_light_blue;
+    border-radius: 50%;
+    text-align: center;
+    background-image: url('images/photo-camera.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+    flex: 0 0 auto;
+    input{
+      display: none;
+    }
+    label{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+  &__filename{
+    font-size: 21px;
+    line-height: 24px;
+    color: $gray_E0;
+  }
+  &__remove{
+    position: relative;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    display: none;
+    top:2px;
+    &:before,
+    &:after{
+      content:'';
+      position: absolute;
+      background-color: $gray_85;
+      height: 2px;
+      width: 10px;
+      border-radius: 1px;
+      display: block;
+      top: 4px;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+  &.hasfile{
+    .file-upload__btn{
+      background-image: url('images/photo-camera2.svg');
+    }
+    .file-upload__remove{
+      display: block;
+    }
+  }
+}
+button {
+  border: none;
+  }

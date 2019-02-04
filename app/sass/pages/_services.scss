@@ -1,0 +1,134 @@
+.services{
+  &__b1{
+    padding-top: 80px;
+    background: linear-gradient(180deg,$clr_light_blue,$white);
+
+  }
+  &__b2{
+    background: linear-gradient(180deg,$clr_light_blue,$white);
+    position: relative;
+    margin-top: -350px;
+    padding-top: 350px;
+  }
+  &__b{
+    border-bottom: 1px solid $clr_line;
+    margin-bottom: 70px;
+    padding-bottom: 70px;
+
+  }
+  &__ttl{
+    margin-bottom: 20px;
+  }
+  &__prev{
+    margin-bottom: 67px;
+  }
+  &__prev-txt{
+    color: $gray_31;
+    opacity: .7;
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 6px;
+  }
+  &__more{
+    color: $clr_blue;
+    font-size: 21px;
+    line-height: 26px;
+    &:after{
+      content: '';
+      background-image: url('images/arr-blue.svg');
+      width: 15px;
+      height: 12px;
+      display: inline-block;
+      margin-left: 10px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &__doctor{
+
+    position: relative;
+    margin-bottom: 55px;
+    z-index: 1;
+    @media (min-width: $scr_tab) {
+      display: flex;
+      align-items: center;
+    }
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  &__doctors-ttl{
+    margin-bottom: 55px;
+  }
+  &__doctor-img{
+    flex: 0 0 auto;
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    @media (min-width: $scr_tab) {
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
+    &:before{
+      content: '';
+      display: block;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: $white;
+      box-shadow: 0 3px 25px rgba($clr_shadow, .10);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      z-index: -1;
+    }
+  }
+  &__doctor-inf{
+    color: $clr_descr;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  &__doctor-name{
+    color: $gray_31;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  &__doctor-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__doctor-col{
+    width: 48%;
+  }
+  &__doctor-d{
+    margin-bottom: 22px;
+  }
+  &__doctor-prev{
+    margin-bottom: 35px;
+  }
+  &__doctor-sn{
+    margin-bottom: 13px;
+  }
+  &__doctor-sb{
+    font-weight: bold;
+    line-height: 21px;
+  }
+  &__slider{
+    margin-bottom: 135px;
+    z-index: 2;
+  }
+  &__signup{
+    .b-appointment{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.feedback-form{
+  &__label{
+    color: $clr_subtitle;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 18px;
+    @media (min-width: $scr_mobile) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    &.required{
+      &:after{
+        content: '*';
+        color: $red;
+        padding-left: 3px;
+      }
+    }
+  }
+  &__row{
+    margin-bottom: 10px;
+    @media (min-width: $scr_mobile) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 21px;
+    }
+    &_footer{
+      margin-top: 15px;
+      @media (min-width: $scr_mobile) {
+        margin-top: 29px;
+      }
+    }
+  }
+  &__col{
+    width: 100%;
+    &_col2{
+      margin-bottom: 10px;
+      @media (min-width: $scr_mobile) {
+        width: 47%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

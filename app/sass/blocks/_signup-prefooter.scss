@@ -1,0 +1,17 @@
+.b-prefooter {
+  margin-top:     -103px;
+  margin-bottom:  -150px;
+  padding-bottom: 50px;
+  padding-top:    140px;
+  @media (min-width: $scr_mobile) {
+    padding-bottom: 150px;
+    }
+  background:     linear-gradient(0, $white, $clr_light_blue);
+  .b-content_wrapper {
+    max-width:       940px;
+    margin:          0 auto;
+    display:         flex;
+    justify-content: space-around;
+    flex-wrap:       wrap;
+    }
+  }

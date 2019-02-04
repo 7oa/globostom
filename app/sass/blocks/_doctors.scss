@@ -1,0 +1,108 @@
+.b-doctors {
+  margin-bottom: 112px;
+  &__prev{
+    font-size: 16px;
+    line-height: 20px;
+    color: $clr_subtitle;
+    @media (min-width: $scr_tab) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+}
+
+.b-doctors__header {
+  margin-bottom: 95px;
+  h2 {margin-bottom: 20px}
+  }
+
+.b-doctors__slider {
+  width:         100%;
+  margin-bottom: 95px;
+  }
+
+.sly-scrollbar {
+  height: 5px;
+  background: rgba($clr_blue, .15);
+  width: 100%;
+  .sly-handle {
+    height: 100%;
+    width: 20%;
+    background-color: $clr_blue;
+    border-radius: 100px;
+    .sly-mousearea{}
+    }
+  }
+
+.b-doctor-card {
+  position: relative;
+  margin: 0 28px;
+  width: 250px;
+  float: left;
+  cursor: pointer;
+}
+
+.b-doctor-card__img {
+  margin-bottom: 41px;
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  &:after{
+    content: '';
+    display: block;
+    width: 250px;
+    height: 250px;
+    border-radius:    50%;
+    background-color: $white;
+    box-shadow:       0 3px 25px rgba($clr_shadow, .10);
+    position:         absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+.b-doctor-card-img__bgr {
+  width:            250px;
+  height:           250px;
+  border-radius:    50%;
+  background-color: white;
+  box-shadow:       0 3px 25px rgba($clr_shadow, .10);
+  z-index:          -1;
+  position:         absolute;
+  bottom:           0;
+  right:            50%;
+  transform:        translateX(50%);
+  }
+
+.b-doctor-card__name {
+  font-weight:   bold;
+  font-size:     24px;
+  line-height:   26px;
+  color:         $gray_31;
+  text-align:    center;
+  margin-bottom: 10px;
+  }
+
+.b-doctor-card__spec {
+  font-size:   15px;
+  line-height: 18px;
+  text-align:  center;
+  }
+
+.b-doctor__slider_nav {
+  width: 100%;
+  }
+
+.b-block-nav {
+  height: 5px;
+  &:first-child {
+    background-color: $clr_blue;
+    }
+  }
+

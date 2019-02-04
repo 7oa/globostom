@@ -1,0 +1,23 @@
+section.b-doctors
+    header.b-doctors__header
+        h2 Команда врачей
+        .b-doctors__prev Команда высококлассных специалистов
+    .b-doctors__slider.objSlider
+        ul
+            - for (var x = 0; x < 3; x++)
+                li.b-doctor-card.js-izimodal-open(data-izimodal-open="#doctor")
+                    .b-doctor-card__img(style="background-image:url('images/doc_1.png')")
+                    .b-doctor-card__name
+                        span Быстрова <br> Юлия Александровна
+                    .b-doctor-card__spec
+                        span Врач-стоматолог терапефт
+                li.b-doctor-card.js-izimodal-open(data-izimodal-open="#doctor")
+                    .b-doctor-card__img(style="background-image:url('images/doc_3.png')")
+                    .b-doctor-card__name
+                        span Кравченко<br> Николай Сергеевич
+                    .b-doctor-card__spec
+                        span Врач-стоматолог общей практики
+    .sly-scrollbar
+        .sly-handle
+            .sly-mousearea
+    include ../modals/_doctor

@@ -1,0 +1,116 @@
+.important{
+  margin-bottom: 70px;
+  background: linear-gradient(180deg, $clr_light_blue, $white);
+}
+.important-bl{
+  border-bottom: 1px solid $clr_line;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  @media screen and (min-width: $scr_tab) {
+    display: flex;
+    padding-top: 60px;
+  }
+  &:last-of-type{
+    border-bottom: none;
+  }
+  &__l{
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    @media screen and (min-width: $scr_tab) {
+      width: 35%;
+      flex: 0 0 auto;
+      margin-bottom: 0;
+    }
+  }
+  &__r{
+    flex-grow: 1;
+  }
+  &__icon{
+    margin-bottom: 0;
+    @media screen and (min-width: $scr_tab) {
+      margin-bottom: 20px;
+    }
+  }
+  &__ttl{
+    color: $clr_gray;
+    font-family: 'ALSSchlangesans';
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 10px;
+    @media screen and (min-width: $scr_tab) {
+      margin-bottom: 15px;
+    }
+  }
+  &__prev{
+    font-size: 16px;
+    line-height: 22px;
+    color: $gray_31;
+  }
+  &__h3{
+    font-family: 'ALSSchlangesans';
+    font-weight: bold;
+    color: $clr_gray;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 23px;
+  }
+  &__h4{
+    font-family: 'ALSSchlangesans';
+    font-weight: bold;
+    color: $clr_subtitle;
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 23px;
+  }
+  &__ul{
+    margin-bottom: 30px;
+    &_col2{
+      @media screen and (min-width: $scr_mobile) {
+        column-count: 2;
+      }
+    }
+  }
+  &__li{
+    font-size: 16px;
+    line-height: 22px;
+    color: $clr_gray-22;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 25px;
+    &:before{
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 5px;
+      background-color: $clr_blue-44;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  }
+  &__flex-list{
+    display: block;
+    @media screen and (min-width: $scr_tab) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__flex-item{
+    width: 100%;
+    @media screen and (min-width: $scr_tab) {
+      width: 49%;
+    }
+  }
+  &__list{
+    font-size: 16px;
+    line-height: 29px;
+    &_col2{
+      @media screen and (min-width: $scr_mobile) {
+        column-count: 2;
+      }
+    }
+  }
+}

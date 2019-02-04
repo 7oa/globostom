@@ -1,0 +1,33 @@
+.page404{
+  background-color: $clr_blue;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 120px;
+  &__img{
+    margin-bottom: 35px;
+  }
+  &__ttl{
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    @media (min-width: $scr_mobile) {
+      font-size: 46px;
+      line-height: 48px;
+    }
+  }
+  &__back{
+    color: $white;
+    opacity: .7;
+    font-size: 21px;
+    line-height: 24px;
+    &:before{
+      content: '←';
+      padding-right: 5px;
+    }
+  }
+}

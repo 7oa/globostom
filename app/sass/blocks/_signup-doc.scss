@@ -1,0 +1,66 @@
+.docs-list {
+  width : 100%;
+  @media (min-width : $scr_tab) {
+    padding : 30px 40px;
+    }
+  &__spec {
+    cursor : pointer;
+    }
+  &__spec > li {
+    margin-bottom : 15px;
+    & > p {
+      border-radius    : 5px;
+      padding          : 13px 17px 9px;
+      font-size        : 18px;
+      line-height      : 25px;
+      background-color : $clr_light-yellow;
+      border           : 1px solid white;
+      }
+    &.chosen > p {
+      background-color : $clr_green;
+      font-weight      : bold;
+      color            : $white;
+      transition       : all 5ms linear;
+      }
+    &.error > p {
+      border-color: $red;
+      }
+    }
+  .chosen .doc {display : block;}
+  .doc {
+    display : none;
+    li {
+      display        : flex;
+      flex-direction : row;
+      padding        : 10px 16px;
+      border-radius  : 5px;
+      align-items    : center;
+      border         : 2px solid $white;
+      &:first-child {
+        margin-top : 7px;
+        }
+      &.chosen {
+        border-color : $clr_green;
+        transition   : all 5ms linear;
+        }
+      &:not(.chosen):hover {
+        border-color : rgba($clr_green, .3);
+        transition   : all 5ms linear;
+        }
+      }
+    &__photo {
+      width        : 53px;
+      height       : 66px;
+      margin-right : 20px;
+      @include bg-img(100%);
+      }
+    p {
+      font-size   : 18px;
+      font-weight : bold;
+      line-height : 21px;
+      }
+    p + .doc__photo {
+      float : left;
+      }
+    }
+  }

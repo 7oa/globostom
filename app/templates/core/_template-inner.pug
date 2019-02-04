@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        block title
+        link(rel="icon" type="image/png" href="images/icons/globostom.png")
+        include ../blocks/_meta
+        include _link
+        include _scripts
+    body
+        .wrapper
+            include _header-inner
+            .content
+                block content
+            //end content
+
+            include _footer-inner
+            // end footer
+        //end wrapper

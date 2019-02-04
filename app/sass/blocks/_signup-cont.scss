@@ -1,0 +1,45 @@
+.b-sign-cont {
+  position : relative;
+  }
+.b-cont-form {
+  @media (min-width : $scr_mobile) {
+    padding : 30px 40px;
+    }
+  label {
+    font-weight : bold;
+    font-size   : 16px;
+    line-height : 24px;
+    }
+  input,
+  textarea {
+    margin : 10px 0 20px;
+    color  : $black;
+    }
+  textarea {
+    height : 100px;
+    }
+  input:focus,
+  textarea:focus {
+    border-color : rgba($gray_31, 1);
+    transition   : all 5ms linear;
+    }
+  &__line {
+    @media (min-width : $scr_laptop) {
+      display         : flex;
+      flex-direction  : row;
+      justify-content : space-between;
+      }
+    .name {
+      flex-basis : 60%;
+      }
+    .phone {
+      flex-basis : 35%;
+      }
+    }
+  .textarea {flex-shrink : 0}
+  .blue-button {
+    @media (min-width : $scr_mobile) {
+      margin : 0;
+      }
+    }
+  }

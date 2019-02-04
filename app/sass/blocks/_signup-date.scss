@@ -1,0 +1,95 @@
+.b-date {
+  margin : 0 auto;
+  @media (min-width : $scr_tab) {
+    padding : 30px 40px;
+    }
+  &__day {
+    border-bottom : 1px solid rgba($clr_blue, .2);
+    margin-bottom : 35px;
+    }
+  &__time {
+    display               : grid;
+    grid-template-columns : repeat(2, auto);
+    //grid-column-gap:       20px;
+    grid-row-gap          : 20px;
+    @media (min-width : $scr_mobile) and (max-width : $scr_tab) {
+      grid-template-columns : repeat(3, auto);
+      }
+    @media (min-width : $scr_laptop) {
+      grid-template-columns : repeat(4, auto);
+      }
+    .time {
+      width            : 115px;
+      height           : 40px;
+      margin           : 0 auto;
+      background-color : $clr_light-yellow;
+      border-radius    : 5px;
+      line-height      : 40px;
+      text-align       : center;
+      cursor           : pointer;
+      &.booked {
+        color       : $red;
+        font-weight : bold;
+        }
+      &.chosen {
+        background-color : $clr_green;
+        color            : $white;
+        }
+      }
+    }
+  }
+// Стили календаря
+.datepicker {
+  border      : none;
+  font-family : inherit;
+  width       : 100%;
+  &--nav {
+    border    : none;
+    max-width : 280px;
+    margin    : 0 auto;
+    &-action {
+      color: #4E79C7;
+      }
+    }
+  &--nav-title {
+    font-size   : 22px;
+    font-weight : bold;
+    line-height : 24px;
+    i {color : inherit;}
+    }
+  &--day-name {
+    color       : $black;
+    font-weight : bold;
+    font-size   : 16px;
+    @media (min-width : $scr_mobile) {
+      font-size : 18px;
+      }
+    }
+  &--cell-day {
+    font-size : 16px;
+    @media (min-width : $scr_mobile) {
+      font-size : 18px;
+      }
+    &.-current- {
+      color : $clr_green;
+      }
+    &.-selected-,
+    &.-focus-,
+    &.-selected-.-other-month-,
+    &.-focus-.-other-month- {
+      background-color : $clr_green;
+      color            : $white;
+      font-weight      : bold;
+      }
+    &.-selected-.-focus- {
+      background-color : $clr_green;
+      }
+    &.-selected-.-current- {
+      background-color : $clr_green;
+      }
+    &.-disabled-,
+    &.-other-month- {
+      color : $clr_gray_B2;
+      }
+    }
+  }

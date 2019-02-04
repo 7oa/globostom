@@ -1,0 +1,117 @@
+extends core/_template-inner
+
+block title
+    title='Важно'
+
+block content
+    .inner-page
+        .inner-page__header
+            .sec-content
+                .inner-page__ttl Услуги и цены
+                .inner-page__prev Все что связано с зубами — это к нам, мы знаем о зубах все
+                .second-menu
+                    ul._list
+                        li._item
+                            a._link.selected(href="#") Терапия взрослая
+                        li._item
+                            a._link(href="#") Терапия детская
+                        li._item
+                            a._link(href="#") Ортопедия
+                        li._item
+                            a._link(href="#") Ортодонтия
+                        li._item
+                            a._link(href="#") Пародонтология
+                        li._item
+                            a._link(href="#") Хирургия
+                        li._item
+                            a._link(href="#") Гигиена
+                        li._item-dd
+                            button.dropdown-toggle(type="button") Еще
+                            ul.dropdown-menu
+        .inner-page__body
+            .services
+                ._b1
+                    ._b.sec-content
+                        ._ttl
+                            h2 Терапия взрослая
+                        ._prev
+                            ._prev-txt Врач-терапевт ведет первичный прием, ставит диагноз, лечит зубы, направляет на рентген, подготавливает полость рта под протезирование. Это специалист, который занимается общим лечением зубов, главным образом кариеса, пульпита и периодонтита.
+                            a._more(href="#") Подробнее о взрослой терапии
+                        .price
+                            ._menu
+                                ._tag.js-tag.selected(data-id="tab1") Анестезия
+                                ._tag.js-tag(data-id="tab2") Лечение кариеса
+                                ._tag.js-tag(data-id="tab3") Пломбирование кариозной полости стеклоиономерным цементом
+                                ._tag.js-tag(data-id="tab1") Пломбирование кариозной полости материалом светового отверждения
+                                ._tag.js-tag(data-id="tab2") Лечение осложненного кариеса
+                                ._tag.js-tag(data-id="tab3") Подготовка и пломбирование корневых каналов
+                                ._tag.js-tag(data-id="tab2") Лечение заболеваний пародонта
+                                ._tag.js-tag(data-id="tab1") Профилактические мероприятия
+                                ._tag.js-tag(data-id="tab3") Прочие услуги
+                            ._info
+                                ._table#tab1
+                                    ._line
+                                        ._name Лечение кариеса дентина
+                                        ._price 1700 Р
+                                    ._line
+                                        ._name Лечение кариеса цемента
+                                        ._price 2030 Р
+                                    ._line
+                                        ._name Наложение жидкого коффердама в области одного зуба
+                                        ._price 250 Р
+                                    ._line
+                                        ._name Наложение коффердама
+                                        ._price 550 Р
+                                ._table#tab2
+                                    ._line
+                                        ._name 2Механическая и медикаментозная подготовка одного корневого канала
+                                        ._price 1700 Р
+                                    ._line
+                                        ._name Механическая и медикаментозная подготовка одного облитерированного корневого канала
+                                        ._price 2030 Р
+                                    ._line
+                                        ._name Закрытие перфорации дна полости зуба, корневого канала «Коллапан»
+                                        ._price 250 Р
+                                    ._line
+                                        ._name Установка одного парапульпарного штифта для создания дополнительного ретенционного пункта при пломбировании кариозной полости
+                                        ._price 3000 Р
+                                ._table#tab3
+                                    ._line
+                                        ._name 3Механическая и медикаментозная подготовка одного корневого канала
+                                        ._price 1700 Р
+                                    ._line
+                                        ._name Механическая и медикаментозная подготовка одного облитерированного корневого канала
+                                        ._price 2030 Р
+                                    ._line
+                                        ._name Закрытие перфорации дна полости зуба, корневого канала «Коллапан»
+                                        ._price 250 Р
+                                    ._line
+                                        ._name Установка одного парапульпарного штифта для создания дополнительного ретенционного пункта при пломбировании кариозной полости
+                                        ._price 3000 Р
+                    ._b.sec-content
+                        ._doctors
+                            ._doctors-ttl
+                                h2 Наши врачи-терапевты
+                            - for (var x = 0; x < 3; x++)
+                                ._doctor
+                                    ._doctor-img(style="background-image:url('images/doc_1.png')")
+                                    ._doctor-inf
+                                        ._doctor-name Быстрова<br>Юлия Александровна
+                                        ._doctor-d Врач-стоматолог терапевт
+                                        ._doctor-prev Закончила Архангельский Государственный Медецинский Институт в 1997 году по специальности стоматолог-терапевт
+                                        ._doctor-row
+                                            ._doctor-col
+                                                ._doctor-sn Сертификат:
+                                                ._doctor-sb.
+                                                    СГМУ, 0129240762009<br>
+                                                    Рег. № 3457 от 17.10.2015
+                                            ._doctor-col
+                                                ._doctor-sn Удостоверение:
+                                                ._doctor-sb.
+                                                    №08-2000 от 04.06.2000
+                    ._slider.sec-content
+                        include blocks/_svc-level
+                ._b2
+
+                    ._signup.sec-content
+                        include blocks/_appointment

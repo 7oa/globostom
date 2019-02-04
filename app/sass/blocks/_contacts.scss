@@ -1,0 +1,89 @@
+.b-contacts {
+  display:        flex;
+  background:     white;
+  flex-direction: column;
+  border-radius:  25px;
+  padding:        60px 60px 60px 50px;
+  box-shadow:     0 10px 50px rgba($clr_shadow, .15);
+  position: relative;
+  margin-bottom: -165px;
+  &__addr{
+    font-size: 21px;
+    line-height: 24px;
+    color: $clr_blue;
+    margin-bottom: 15px;
+  }
+  &__working-hours{
+    font-size: 21px;
+    line-height: 24px;
+    color: $gray_31;
+    margin-bottom: 15px;
+  }
+}
+
+.b-contacts-info {
+  padding-top: 11px;
+  max-width:   290px;
+  h2 {margin-bottom: 26px}
+  .addr {
+    color:         $clr_blue;
+    margin-bottom: 15px;
+    }
+  .tel {
+    font-size:     27px;
+    line-height:   30px;
+    margin-bottom: 30px;
+    }
+  .working_hours {
+    margin-bottom: 15px;
+    }
+  .email {
+    display:       block;
+    margin-bottom: 30px;
+    }
+  }
+
+.b-contacts-map {
+  display: none;
+  }
+
+.b-socisal {
+  display:        flex;
+  flex-direction: row;
+  .social_link {
+    display:      block;
+    width:        35px;
+    height:       35px;
+    margin-right: 13px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+    }
+  .fb {background-image: url("images/icons/fb.svg")}
+  .vk {background-image: url("images/icons/vk.svg")}
+  .inst {background-image: url("images/icons/inst.svg")}
+  }
+
+@media (min-width: $scr_mobile) {
+  .b-contacts {
+    flex-direction:  row;
+    justify-content: space-between;
+    }
+  .b-contacts-info {
+    .tel {
+      font-size:   36px;
+      line-height: 48px;
+      }
+    }
+  .b-contacts-map {
+    display:   block;
+    width: 60%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: $scr_laptop) {
+  .b-contacts-map {
+    width: 490px;
+  }
+}

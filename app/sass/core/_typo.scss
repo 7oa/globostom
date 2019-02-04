@@ -1,0 +1,44 @@
+body {
+  font:  normal 21px/24px 'ALSSchlangesans';
+  color: $clr_light_gray;
+  }
+
+h1 {
+  font-weight: bold;
+  font-size:   30px;
+  line-height: 32px;
+  color:       $clr_gray;
+  }
+
+h2 {
+  font-weight: bold;
+  font-size:   28px;
+  line-height: 30px;
+  color:       $clr_gray;
+  }
+
+@media (min-width: $scr_tab) {
+  h1 {
+    font-size:   62px;
+    line-height: 62px;
+    }
+  h2 {
+    font-size:   46px;
+    line-height: 48px;
+    }
+  }
+
+h3 {
+  font-weight: bold;
+  font-size:   21px;
+  line-height: 22px;
+  color:       $gray_31;
+  }
+
+a {color: $clr_blue;}
+
+strong{
+  font-weight: bold;
+}
+
+.mod-subtitle {color: #2C2C2C;}

@@ -1,0 +1,400 @@
+.modal{
+  display: none;
+  font-family: 'ALSSchlangesans';
+  &__inner{
+    background-color: $white;
+    border-radius: 25px;
+  }
+  &__close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &:focus{
+      outline: none;
+    }
+    &:before,
+    &:after{
+      content:'';
+      position: absolute;
+      background-color: $gray_85;
+      height: 2px;
+      width: 20px;
+      border-radius: 1px;
+      display: block;
+      top: 9px;
+    }
+    &:before{
+      transform: rotate(45deg);
+    }
+    &:after{
+      transform: rotate(-45deg);
+    }
+  }
+}
+.modal-review{
+  box-sizing: border-box;
+  padding: 20px;
+  @media (min-width: $scr_tab) {
+    padding: 67px 90px;
+  }
+  &__head{
+    border-bottom: 1px solid $clr_blue;
+    padding-bottom: 20px;
+    @media (min-width: $scr_tab) {
+      display: flex;
+      padding-bottom: 44px;
+    }
+  }
+  &__img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-image: url('images/no-img.svg');
+    @include bg-img(cover);
+    flex: 0 0 auto;
+    margin-right: 0;
+    border-radius: 50%;
+    @media (min-width: $scr_tab) {
+      margin-right: 37px;
+      width: 149px;
+      height: 149px;
+    }
+  }
+  &__name{
+    color: $gray_31;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    @media (min-width: $scr_mobile) {
+      font-size: 35px;
+      line-height: 38px;
+      margin-bottom: 10px;
+    }
+    @media (min-width: $scr_tab) {
+      font-size: 45px;
+      line-height: 48px;
+      margin-bottom: 15px;
+    }
+  }
+  &__date{
+    color: $gray_E0;
+    font-size: 18px;
+    line-height: 22px;
+    @media (min-width: $scr_tab) {
+      font-size: 21px;
+      line-height: 24px;
+    }
+  }
+  &__r{
+    @media (min-width: $scr_tab) {
+      padding-top: 20px;
+    }
+  }
+  &__body{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media (min-width: $scr_tab) {
+      padding-top: 45px;
+      padding-bottom: 50px;
+    }
+  }
+  &__txt{
+    color: $gray_31;
+    font-size: 16px;
+    line-height: 20px;
+    @media (min-width: $scr_tab) {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
+  &__footer{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__prev,
+  &__next{
+    font-weight: bold;
+    color: $clr_blue;
+    font-size: 18px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    @media (min-width: $scr_mobile) {
+      font-size: 21px;
+      line-height: 28px;
+    }
+    &_disabled{
+      color: $gray_E0;
+      cursor: default;
+    }
+  }
+  &__prev{
+    text-align: left;
+    &:before{
+      content:'';
+      display: block;
+      width: 16px;
+      height: 10px;
+      background-image: url('images/arr-blue.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      transform: rotate(180deg);
+      margin-right: 10px;
+    }
+    &_disabled{
+      &:before{
+        background-image: url('images/arr-gray.svg');
+      }
+    }
+  }
+  &__next{
+    text-align: right;
+    &:after{
+      content:'';
+      display: block;
+      width: 16px;
+      height: 10px;
+      background-image: url('images/arr-blue.svg');
+      background-repeat: no-repeat;
+      background-position: right center;
+      margin-left: 10px;
+    }
+    &_disabled{
+      &:after{
+        background-image: url('images/arr-gray.svg');
+      }
+    }
+  }
+
+}
+.send-review{
+  padding: 20px;
+  @media (min-width: $scr_tab) {
+    padding: 42px 36px;
+  }
+  &__ttl{
+    color: $clr_gray;
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    @media (min-width: $scr_mobile) {
+      font-size: 34px;
+      line-height: 36px;
+      margin-bottom: 15px;
+    }
+  }
+  &__prev{
+    color: $clr_gray-22;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 25px;
+  }
+}
+
+.modal-mes{
+  text-align: center;
+  padding: 60px 30px;
+  &__img{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 18px;
+    @media (min-width: $scr_mobile) {
+      width: 100px;
+      height: 100px;
+    }
+    img{
+      width: 100%;
+    }
+  }
+  &__ttl{
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $gray_31;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray_31;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+  &__button{
+    margin: 30px auto 0;
+    width: 270px;
+    background-color: $clr_blue;
+    line-height: 50px;
+    font-size: 21px;
+    color: $white;
+    display: block;
+    border-radius: 25px;
+    box-shadow: 0 1px 20px rgba($clr_shadow, .15);;
+  }
+}
+
+.modal-doctor{
+  padding: 30px;
+  @media (min-width: $scr_tab) {
+    padding: 60px;
+  }
+  &__img{
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 20px;
+    @media (min-width: $scr_tab) {
+      margin-right: 50px;
+      margin-bottom: 0;
+      flex: 0 0 auto;
+    }
+    &:after{
+      content: '';
+      display: block;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background-color: $white;
+      box-shadow: 0 3px 25px rgba($clr_shadow, .10);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+  &__src{
+    display: block;
+    width: 250px;
+    height: 300px;
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+  &__bl1{
+    border-bottom: 1px solid $clr_line;
+    @media (min-width: $scr_tab) {
+      display: flex;
+      padding-bottom: 20px;
+    }
+  }
+  &__bl2{
+    padding-top: 20px;
+    @media (min-width: $scr_tab) {
+      padding-top: 40px;
+    }
+  }
+  &__name{
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: bold;
+    color: $gray_31;
+    margin-bottom: 8px;
+  }
+  &__under{
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 27px;
+    @media (min-width: $scr_tab) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__item{
+    display: flex;
+    margin-bottom: 10px;
+    @media (min-width: $scr_tab) {
+      margin-bottom: 25px;
+    }
+  }
+  &__date{
+    width: 61px;
+    flex: 0 0 auto;
+    color: $clr_blue;
+    font-size: 15px;
+    line-height: 21px;
+    font-weight: bold;
+  }
+  &__inf{
+    flex-grow: 1;
+    font-size: 15px;
+    line-height: 21px;
+    color: $clr_descr;
+    p{
+      margin-bottom: 10px;
+    }
+  }
+  &__prev{
+    font-size: 15px;
+    line-height: 21px;
+    margin-bottom: 25px;
+    color: $clr_descr;
+  }
+  &__ttl{
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+    color: $gray_31;
+    font-weight: bold;
+  }
+}
+.modal-appoin-success {
+  margin: 0 auto;
+  max-width: 470px;
+  padding: 30px 15px;
+  @media (min-width: $scr_mobile) {
+    padding: 60px 20%;
+    }
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: url("images/success.png") no-repeat center;
+    background-size: cover;
+    }
+  &__ttl {
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+    }
+  &__info{
+    margin-bottom: 50px;
+    .row {
+      box-sizing: border-box;
+      @media (min-width: $scr_mobile) {
+        display: flex;
+        flex-direction: row;
+        }
+      div {
+        flex: 0 0 auto;
+        padding-bottom: 15px;
+        @media (min-width: $scr_mobile) {
+          width: 50%;
+          }
+        &:first-child {
+          font-weight: bold;
+          padding-right: 20px;
+          @media (min-width: $scr_mobile) {
+            text-align: right;
+            border-right: 1px solid rgba($clr_blue , .2);
+            }
+          }
+        &:last-child {
+          padding-left: 20px;
+          }
+        }
+      }
+    }
+  }

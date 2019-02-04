@@ -1,0 +1,41 @@
+extends core/_template-inner
+
+block title
+    title='Статьи'
+
+block content
+    .inner-page
+        .inner-page__header
+            .sec-content
+                .inner-page__ttl Статьи
+                .inner-page__prev Ответы на самые важные вопросы о здоровье<br>и красоте вашей улыбки
+        .inner-page__body
+            .articles
+                ._content.sec-content
+                    ._list
+                        -for(var i=0;i<3;i++)
+                            a._item(href="#")
+                                ._img( style="background-image:url('https://picsum.photos/1000/400')")
+                                ._cnt
+                                    ._ttl Что такое терапия
+                                    ._prev Короткое описание статьи в две-три строки
+                            a._item(href="#")
+                                ._img(style="background-image:url('https://picsum.photos/800/400')")
+                                ._cnt
+                                    ._ttl Ортопедия
+                                    ._prev Короткое описание статьи в две-три строки
+                            a._item(href="#")
+                                ._img(style="background-image:url('https://picsum.photos/600/400')")
+                                ._cnt
+                                    ._ttl Ортодонтия
+                                    ._prev Короткое описание статьи в две-три строки
+                    ._pagination
+                        .pagination
+                            span._link.-prev.disabled Назад
+                            ._list
+                                a._page.selected(href="#") 1
+                                -for(var i=2;i<5;i++)
+                                    a._page(href="#")=i
+                                span._page ...
+                                a._page(href="#") 27
+                            a._link.-next(href="#") Вперед

@@ -1,0 +1,47 @@
+.inner-page{
+  &__header{
+    background-color: $clr_blue;
+    color: $white;
+    height: 300px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    .sec-content{
+      height: 100%;
+      position: relative;
+    }
+  }
+  &__ttl{
+    font-size: 62px;
+    line-height: 62px;
+    font-family: 'ALSSchlangesans';
+    font-weight: bold;
+    margin-bottom: 14px;
+  }
+  &__prev{
+    font-family: 'ALSSchlangesans';
+    font-size: 21px;
+    line-height: 24px;
+    opacity: .7;
+  }
+  &__body{
+
+  }
+  .sec-content{
+    position: relative;
+  }
+  .back{
+    width: 50px;
+    height: 30px;
+    display: block;
+    background-image: url('images/back.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    @media (min-width: 1040px) {
+      position: absolute;
+      top: 16px;
+      right: 100%;
+      margin-top: 0;
+    }
+  }
+}

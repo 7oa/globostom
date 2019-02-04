@@ -1,0 +1,126 @@
+.detail-page{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 16px;
+  line-height: 24px;
+  background: linear-gradient(180deg,$clr_light_blue,$white);
+  @media (min-width: $scr_laptop) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  &__h{
+    h1{
+      color: $gray_31;
+      font-size: 46px;
+      line-height: 48px;
+      margin-bottom: 30px;
+      @media (min-width: $scr_laptop) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+  &__h2{
+    color: $clr_gray;
+    font-size: 34px;
+    line-height: 48px;
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  &__h3{
+    color: $clr_gray;
+    font-size: 26px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  &__img-right{
+    @media (min-width: $scr_tab) {
+      float: right;
+      max-width: 50%;
+      margin-left: 70px;
+      padding-top: 10px;
+    }
+    img{
+      max-width: 100%;
+    }
+  }
+  &__bl-img{
+    margin-bottom: 50px;
+    @include clearfix();
+    @media (min-width: $scr_laptop) {
+      margin-bottom: 90px;
+    }
+  }
+  &__bl-col3{
+    margin-bottom: 50px;
+    border-bottom: 1px solid $clr_line;
+    padding-bottom: 30px;
+    @media (min-width: $scr_laptop) {
+      margin-bottom: 60px;
+    }
+    ul{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        width: 100%;
+        margin: 0 0 20px;
+        position: relative;
+        padding-left: 25px;
+        line-height: 22px;
+        box-sizing: border-box;
+        @media (min-width: $scr_tab) {
+          width: 48%;
+          margin: 0 1% 20px;
+        }
+        @media (min-width: $scr_laptop) {
+          width: 31%;
+        }
+        &:before{
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $clr_blue-44;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+      }
+    }
+  }
+  &__bl-list{
+    margin-bottom: 50px;
+    background-color: $white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    padding: 30px;
+    border-radius: 10px;
+    @media (min-width: $scr_laptop) {
+      margin-bottom: 60px;
+      padding: 55px 50px;
+    }
+    ul{
+      @media (min-width: $scr_tab) {
+        column-count: 2;
+      }
+      li{
+        position: relative;
+        padding-left: 25px;
+        line-height: 22px;
+        box-sizing: border-box;
+        margin-bottom: 30px;
+        &:before{
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $clr_blue-44;
+          border-radius: 50%;
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+      }
+    }
+  }
+}

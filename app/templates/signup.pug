@@ -1,0 +1,19 @@
+extends core/_template-inner
+
+block title
+    title='Запись на приём'
+
+block content
+    .inner-page
+        .inner-page__header
+            .sec-content
+                .inner-page__ttl Запись на приём
+                .inner-page__prev Выберите специалиста, удобное для вас время посещения и запишитесь на приём
+                a.back(href="#" title="Вернуться назад")
+        .inner-page__body
+            .signup
+                include blocks/_signup-doc
+                include blocks/_signup-date
+                include blocks/_signup-cont
+                include blocks/_signup-prefooter
+        include modals/_appoin-success
